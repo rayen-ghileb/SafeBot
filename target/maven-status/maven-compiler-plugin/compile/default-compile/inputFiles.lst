@@ -1,0 +1,10 @@
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/MainApp.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/utils/CrisisDetector.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/models/TherapeuticInsights.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/models/Conversation.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/controllers/InsightsDashboardController.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/controllers/ChatController.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/models/Message.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/config/AppConfig.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/services/MentalHealthChatService.java
+/home/runner/work/SafeBot/SafeBot/src/main/java/sf/project/database/ChatDAO.java
