@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sf.project.controllers.InsightsDashboardController"
+      spacing="0">
+
+    <!-- Insights List Panel -->
+    <VBox prefWidth="250" style="-fx-background-color: #fafafa; -fx-border-color: #e0e0e0; -fx-border-width: 0 1 0 0;">
+        <Label text="Therapeutic Insights"
+               style="-fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 15;"/>
+        <ListView fx:id="insightsList" VBox.vgrow="ALWAYS"/>
+    </VBox>
+
+    <!-- Insight Detail Panel -->
+    <VBox HBox.hgrow="ALWAYS">
+
+        <!-- No selection placeholder -->
+        <VBox fx:id="noSelectionLabel" alignment="CENTER" VBox.vgrow="ALWAYS">
+            <Label text="Select an insight to view details"
+                   style="-fx-text-fill: #9e9e9e; -fx-font-size: 16;"/>
+        </VBox>
+
+        <!-- Insight Detail -->
+        <VBox fx:id="insightDetail" spacing="10" style="-fx-padding: 20;">
+            <Label text="Session Summary" style="-fx-font-weight: bold; -fx-font-size: 14;"/>
+            <Label fx:id="summaryLabel" wrapText="true"/>
+
+            <Label text="Emotional Tone" style="-fx-font-weight: bold;"/>
+            <Label fx:id="emotionalToneLabel"/>
+
+            <Label text="Key Themes" style="-fx-font-weight: bold;"/>
+            <Label fx:id="themesLabel" wrapText="true"/>
+
+            <Label text="Recommendations" style="-fx-font-weight: bold;"/>
+            <Label fx:id="recommendationsLabel" wrapText="true"/>
+
+            <Label text="Date" style="-fx-font-weight: bold;"/>
+            <Label fx:id="dateLabel"/>
+
+            <WebView fx:id="insightWebView" prefHeight="200" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </VBox>
+</HBox>

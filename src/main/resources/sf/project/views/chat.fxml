@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sf.project.controllers.ChatController"
+      spacing="0"
+      style="-fx-background-color: #f5f5f5;">
+
+    <!-- Header -->
+    <HBox alignment="CENTER_LEFT" spacing="10"
+          style="-fx-background-color: #2196F3; -fx-padding: 10 15;">
+        <Label text="SafeBot" style="-fx-text-fill: white; -fx-font-size: 20; -fx-font-weight: bold;"/>
+        <Label text="Your Mental Health Companion" style="-fx-text-fill: #e3f2fd; -fx-font-size: 13;"/>
+    </HBox>
+
+    <!-- Chat Area -->
+    <ScrollPane fx:id="chatScrollPane" fitToWidth="true" VBox.vgrow="ALWAYS"
+                style="-fx-background-color: transparent; -fx-background: transparent;">
+        <VBox fx:id="chatContainer" spacing="8"
+              style="-fx-padding: 10; -fx-background-color: #f5f5f5;"/>
+    </ScrollPane>
+
+    <!-- Typing Indicator -->
+    <HBox fx:id="typingIndicator" alignment="CENTER_LEFT"
+          style="-fx-padding: 5 15; -fx-background-color: #f5f5f5;">
+        <Label fx:id="typingLabel" text="Connor is typing"
+               style="-fx-text-fill: #757575; -fx-font-style: italic;"/>
+    </HBox>
+
+    <!-- Input Area -->
+    <HBox spacing="8" style="-fx-padding: 10; -fx-background-color: white;">
+        <TextArea fx:id="messageInput"
+                  promptText="Type your message..."
+                  prefRowCount="2"
+                  wrapText="true"
+                  HBox.hgrow="ALWAYS"
+                  style="-fx-border-radius: 5; -fx-background-radius: 5;"/>
+        <Button fx:id="sendButton"
+                text="Send"
+                onAction="#handleSendMessage"
+                style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-background-radius: 5;"/>
+    </HBox>
+</VBox>
